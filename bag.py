@@ -10,7 +10,7 @@ class Bag(set):
     def union(self, *args):
         tmp = super().union( *args)
         return Bag(tmp)
-    
+
 class Bags(dict):
     def __init__(self, *args):
         super().__init__(*args)
@@ -19,7 +19,7 @@ class Bags(dict):
         if bag.index in self:
             del(self[bag.index])
     def add_bag(self, bag):
-        bag.index=self.counter
+        bag.index = self.counter
         self[self.counter] = bag
         self.counter += 1
 
@@ -30,26 +30,33 @@ class Words(dict):
         self.Bags = Bags()
 
     def add_empty_word(self, word):
+        word= word.lower()
+        if word in self:
+            return
         bag = Bag({word})
-        self[word] = [bag, 0]
+        self.sset(word, [bag, 0])
         self.Bags.add_bag(bag)
 
     def combine_bags(self, word1, word2):
+        word1 = word1.lower()
+        word2 = word2.lower()
         if word1 in self:
-            bag1 = self[word1][0]
+            bag1 = self.sget(word1)[0]
         else:
             raise Exception()
         if word2 in self:
-            bag2 = self[word2][0]
+            bag2 = self.sget(word2)[0]
         else:
             raise Exception()
-
         new_bag = bag1.union(bag2)
         self.Bags.add_bag(new_bag)
         for x in new_bag:
-            self[x][0] = new_bag
+            self.sget(x)[0] = new_bag
         self.Bags.delete_bag(bag1)
         self.Bags.delete_bag(bag2)
-        return new_bag
 
+    def sset(self, key, value):
+        self[key.lower()] = value
 
+    def sget(self, key):
+        return self[key.lower()]

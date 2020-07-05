@@ -13,7 +13,7 @@ with open("./data/DE_morph_dict.txt", 'r') as f:
             d.add_empty_word(word)
         if len(words) == 1:
             HEAD_WORD = word
-            d[word][1] = counter
+            d.sget(word)[1] = counter
         if len(words) > 1:
             d.combine_bags(HEAD_WORD, word)
         counter += 1
@@ -33,11 +33,7 @@ with open("./data/de_full_opensubtitle.txt", 'r') as f:
             frequency = int(words[1])
             #TODO check for multiple occurence...don't remove already registerd frequency
             if word in d:
-                d[word][0].frequency += frequency #the frequency belong to the set
-            elif word.lower() in d:
-                d[word.lower()][0].frequency += frequency
-            elif word.capitalize() in d:
-                d[word.capitalize()][0].frequency += frequency
+                d.sget(word)[0].frequency += frequency #the frequency belong to the set
             else:
                 tmp_file.write(word + '\t' + str(frequency) + "\n")
 
@@ -56,25 +52,42 @@ def varianc_val(bags, mean):
 
 
 ## Adding order number for each bag
-sbags = sorted(d.Bags.values(), key= lambda v: v.frequency , reverse = True)
-
-counter = 0
+d.Bags = sorted(d.Bags.values(), key= lambda v: v.frequency , reverse = True)
+counter = 1
 for x in sbags:
     x.order = counter
     counter += 1
 
-
 ## Test
+with open("./data/text.txt", 'r') as f:
+    text = f.read()
+print(text)
 
+import re
 with open("./data/test.txt", 'w') as f:
-    text = "Es tut uns leid, dass die von Ihnen angeforderte Seite nicht verfügbar ist. Hier können Sie mit Stichworten nach dem gewünschten Inhalt suchen :"
-    words = text.split(' ')
+    words = re.split('\W+', text)
+    words = list(set(words))
+    ordered_words = []
+    unrecognized = []
     for w in words:
+        w = w.lower()
+        order = 0
         if w in d:
-            f.write(w + ' ' + str(d[w][0].order) + '\n')
-        elif w.capitalize() in d:
-            f.write(w + ' ' + str(d[w.capitalize()][0].order) + '\n')
-        elif w.lower() in d:
-            f.write(w + ' ' + str(d[w.lower()][0].order) + '\n')
+            order = d.sget(w)[0].order
+            ordered_words.append([w, order])
         else:
-            f.write(w + ' ' + "!!!!!!!" + '\n')
+            unrecognized.append(w)
+    ordered_words = sorted(ordered_words, key=lambda v: v[1], reverse = True)
+    for w in ordered_words:
+        f.write(w[0] + ' ' + str(w[1]) + ' \n')
+    for w in unrecognized:
+        f.write(w + ' ' + '!!!!!!' + ' \n')
+
+#top 5000 words
+with open("./data/5000.txt", 'w') as f:
+    counter = 0
+    for x in d.Bags:
+        f.write(next(iter(x)) + '\n')
+        counter += 1
+        if counter > 5000:
+            break
