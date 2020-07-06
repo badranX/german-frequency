@@ -26,11 +26,11 @@ class Bags(dict):
 
 class Words(dict):
     def __init__(self, *args):
-        super().__init__(self, *args)
+        super().__init__( *args)
         self.Bags = Bags()
 
     def add_empty_word(self, word):
-        word= word.lower()
+        word = word.lower()
         if word in self:
             return
         bag = Bag({word})
@@ -60,3 +60,5 @@ class Words(dict):
 
     def sget(self, key):
         return self[key.lower()]
+
+
