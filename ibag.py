@@ -28,7 +28,7 @@ class Bag():
 class Bags():
     def __init__(self, *args):
         super().__init__(*args)
-        self.list = []
+        self.list = None
         self.set = set()
         self.counter = 0
     def discard(self, bag):
@@ -40,7 +40,6 @@ class Bags():
     def unite(self,bag1, bag2):
         bag1.union(bag2)
         self.discard(bag2)
-
     #After loading frequencies
     def load_order(self):
         tmp = sorted(list(self.set), key= lambda v: v.frequency , reverse = True)
@@ -48,8 +47,13 @@ class Bags():
         for x in tmp:
             x.order = counter
             counter += 1
-        return tmp
-
+        self.list = tmp
+        del(self.set)
+    def __contains__(self, item):
+        if self.set:
+            return item in self.set
+        if self.list:
+            return item in self.list
     def get_top(self, num):
         tmp = sorted(list(self.set), key= lambda v: v.frequency , reverse = True)
         return tmp[0:num]
@@ -101,6 +105,9 @@ class Words():
     def combine_bags(self, word1, word2):
         word1 = word1.lower()
         word2 = word2.lower()
+        
+        if word1 == word2: #this is not needed but a small optemization
+            return
         #TODO warning two equal words cause a bug
         if word1 in self:
             bag1 = self[word1][0]
@@ -117,7 +124,7 @@ class Words():
             return
         #bag2 will be delete from Bags after unite
         self.Bags.unite(bag1, bag2)
-        for x in bag1.set:
+        for x in bag2.set:
             self[x][0] = bag1
 
 
@@ -151,9 +158,7 @@ class Words():
                         self[word][2] = frequency
                     else:
                         tmp_file.write(word + '\t' + str(frequency) + "\n")
-            tmp = self.Bags
-            self.Bags = self.Bags.load_order()
-            del(tmp)
+            self.Bags.load_order()
 
 
     def get_most_frequent_in_bag(self, bag):

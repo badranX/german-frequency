@@ -42,6 +42,10 @@ d.load_frequencies(frequency_file, not_found_file)
 
 
 ### Test ###
+import parsing
+pars = parsing.Parser(d)
+
+pars.parse("./data/text.txt", "./data/test.txt")
 
 with open("./data/text.txt", 'r') as f:
     text = f.read()
@@ -86,4 +90,4 @@ with open("./data/5000.txt", 'w') as f:
             break
 
 
-d.get_most_frequent_in_bag(d.Bags[0])
+d.get_most_frequent_in_bag()
