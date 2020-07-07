@@ -1,18 +1,30 @@
 from ibag import *
+from utility import *
 
-%time
+#####Load Data
+
+%timeit
 fm = "./data/DE_morph_dict.txt"
 tfm = "./data/DE_morph_testing.txt"
 d = Words()
 HEAD_WORD = None
 HEAD_BAG = None
-with open(tfm, 'r') as f:
+with open(fm, 'r') as f:
+    isIch = True
     counter = 1 #  making 0 == unkown
     for line in f:
         line = line.strip()
         words = line.split(' ')
         word = words[0]
         if word not in d:
+#            if 'ich' in d:
+#                if d['ich'][0] in d.Bags.set and isIch:
+#                    print("WE FOUND ICH")
+#                    isIch = False
+#                if d['ich'][0] not in d.Bags.set and not isIch:
+#                    print("WE lost ich")
+#                    print("At word : " , word)
+#                    isIch = True
             d.add_empty(word)
         if len(words) == 1:
             HEAD_WORD = word
@@ -22,40 +34,19 @@ with open(tfm, 'r') as f:
         counter += 1
 
 
-## FREQUENCY LIST for Humans ##
+### Load FREQUENCY  ###
+
 frequency_file = "./data/de_full_opensubtitle.txt"
 not_found_file = "./data/not_found_words.txt"
 d.load_frequencies(frequency_file, not_found_file)
 
 
-#convert frequency to number order
-def mean_val(bags):
-    counter = 0
-    for x in bags.values():
-       counter += x.frequency 
-    return counter/len(bags)
+### Test ###
 
-def varianc_val(bags, mean):
-    counter = 0
-    for x in bags.values():
-        counter += (x.frequency - mean)**2
-    return counter/len(bags)
-
-
-
-## Test
 with open("./data/text.txt", 'r') as f:
     text = f.read()
 print(text)
 
-def get_bind_words(word, dictionary):
-    erst = ""
-    end = word
-    for c in word:
-       erst += c
-
-
-         
 import re
 with open("./data/test.txt", 'w') as f:
     words = re.split('\W+', text)
@@ -75,11 +66,24 @@ with open("./data/test.txt", 'w') as f:
     for w in unrecognized:
         f.write(w + ' ' + '!!!!!!' + ' \n')
 
+
+
 #top 5000 words
 with open("./data/5000.txt", 'w') as f:
+    ordered_list = d.Bags.get_top(5000)
     counter = 0
-    for x in d.Bags:
-        f.write(next(iter(x)) + '\n')
+    for bag in ordered_list:
+        max_freq = -1
+        most_freq_word = None
+        for w in bag:
+            freq = d[w][2]
+            if freq > max_freq:
+                most_freq_word = w
+                max_freq = freq
+        f. write(most_freq_word + '\n')
         counter += 1
         if counter > 5000:
             break
+
+
+d.get_most_frequent_in_bag(d.Bags[0])
