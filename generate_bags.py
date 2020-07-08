@@ -1,6 +1,7 @@
 from ibag import *
 from utility import *
-
+import grammar
+import re
 #####Load Data
 
 %timeit
@@ -8,13 +9,17 @@ fm = "./data/DE_morph_dict.txt"
 tfm = "./data/DE_morph_testing.txt"
 d = Words()
 HEAD_WORD = None
-HEAD_BAG = None
+important_parts = {
+        "V" ,
+    "ADJ",
+    "ADV",
+    "NN" } 
 with open(fm, 'r') as f:
     isIch = True
     counter = 1 #  making 0 == unkown
     for line in f:
         line = line.strip()
-        words = line.split(' ')
+        words = re.split('\W+', line)
         word = words[0]
         if word not in d:
 #            if 'ich' in d:
@@ -28,8 +33,9 @@ with open(fm, 'r') as f:
             d.add_empty(word)
         if len(words) == 1:
             HEAD_WORD = word
-            d[word][1] = counter
         if len(words) > 1:
+            if words[1] in important_parts:
+                d.set_speach_part(HEAD_WORD)
             d.combine_bags(HEAD_WORD, word)
         counter += 1
 

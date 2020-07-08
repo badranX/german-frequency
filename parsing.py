@@ -1,80 +1,69 @@
 import re
+from grammar import *
 
-from dataclasses import dataclass
-from typing import List
-@dataclass
 class WordStat():
     def __init__(self, word, frequency, order, overall_order =0, components=None):
-        self.frequency = frequency
-        self.order = order
-        self.overall_order =  overall_order
-        self.components = components
-        self.word = word
+        self.frequency=frequency
+        self.order=order
+        self.overall_order= overall_order
+        self.components=components
+        self.word=word
 
 class Parser():
     def __init__(self, dictionary):
-        self.d = dictionary
-
-    def search_binded_words(self, word):
-        word = word.lower()
-        if len(word) < 8:
-            return None, None, None
-        #assuming word is at least 4 char long
-        for i in range(4, len(word)-3):
-            erst = word[0:i]
-            second = word[i:]
-            #TODO what if both are possible
-            if second[0] == 's' and erst in self.d and second[1:] in self.d:
-                return (erst, second[1:], True)
-            if erst in self.d and second in self.d:
-                return (erst, second, False)
-        return None, None, None
+        self.d=dictionary
+        self.grammar=Grammar(dictionary)
 
     def search_dict(self, word):
-        word = word.lower()
-        erst, second, _ = self.search_binded_words(word)
-        if word not in self.d and not erst: #last implies not second
-            return None
+        word=word.lower()
+        words = self.grammar.compose(word)
+        if len(words) == 0:
+            return word
+        for w in words:
+            if w in self.d:
+                components, suffix =self.grammar.search_roots(word)
+        if not components or len(components)!=0:
+            if word in self.d:
+                return order, []
+            else:
+                return None, None
 
-        components_order = 0
-        components = None
-        freq = 0
-        order = 0
-        if word in self.d:
-            freq = self.d.bag(word).frequency
-            order = self.d.bag(word).order
+        max_order_in_components=0
+        for w in components:
+            component_order =  self.d.bag(w).order
+            if max_order_in_components < component_order:
+                max_order_in_components=component_order
 
-        if erst and second:
-            erst_stat = WordStat( erst, self.d.bag(erst).frequency, self.d.bag(erst).order)
-            second_stat = WordStat(second, self.d.bag(second).frequency, self.d.bag(second).order) 
-            components = [erst_stat, second_stat]
-            components_order = max(erst_stat.order, second_stat.order) 
-
-        wordstat = WordStat(word, freq, order, components=components)
-        if order == 0 or components_order == 0:
-            wordstat.overall_order = max(components_order, wordstat.order)
+        if order == 0 or max_order_in_components == 0:
+            return max(max_order_in_components, order) , components   
         else:
-            wordstat.overall_order = min(components_order, wordstat.order)
-        return wordstat
+            return min(max_order_in_components, order), components   
 
     def parse (self, input_file, output_file):
-        recognized = set()
-        unrecognized = set()
+        recognized=set()
+        unrecognized=set()
         with open(input_file, 'r') as f:
                 for line in f:
-                    words = re.split('\W+', line)
-                    words = list(set(words))
+                    words=re.split('\W+', line)
+                    words=list(set(words))
                     for w in words:
-                        stats = self.search_dict(w)
-                        if stats:
-                            order = stats.overall_order
-                            if stats.components:
-                                w = w + " : " + stats.components[0].word + " , " + stats.components[1].word
+                        components, suffix = self.grammar.compose(w)
+                        if w in self.d:
+                            order = self.d.bag(w).order
+
+                            max_order = 0
+                            for c in components:
+                                order_comp = self.d.bag(c).order
+                                if max_order < order_comp:
+                                    max_order = order_comp
+                                order = min(max_order, order)
+                            for s in components:
+                                w=w + " : " + s 
                             recognized.add((w, order))
                         else:
                             unrecognized.add(w)
         with open(output_file, 'w') as f_out:
-            ordered_words = sorted(recognized, key=lambda v: v[1], reverse = True)
+            ordered_words=sorted(recognized, key=lambda v: v[1], reverse=True)
             for w in ordered_words:
                 f_out.write(w[0] + ' ' + str(w[1]) + '\n')
             for w in unrecognized:

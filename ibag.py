@@ -1,4 +1,6 @@
 from functools import total_ordering
+from grammar import Part
+
 @total_ordering
 class Bag():
     #TODO, the hash value is the first integer representation of "word" from *args. Is this reasonable?
@@ -71,13 +73,15 @@ class Words():
         if isinstance(key, int):
             return key in self.d
         else:
+            key = key.lower()
             return key in self.indexer
 
     def __getitem__(self, key):
         if isinstance(key, int):
             return self.d[key]
         else:
-            return self.d[self.indexer[key.lower()]]
+            key = key.lower()
+            return self.d[self.indexer[key]]
 
     def __setitem__(self, key, val):
         if isinstance(key, int) :
@@ -98,9 +102,13 @@ class Words():
         word = word.lower()
         self[word] = None
         bag = Bag([self.indexer[word]])
-        self[word] =  [bag, 0, 0]
+        self[word] =  [bag, False, 0]
         self.Bags.add(bag)
 
+    def part_of_speach(self, word):
+        return self[word][1]
+    def set_speach_part(self,word):
+        self[word][1] = True
 
     def combine_bags(self, word1, word2):
         word1 = word1.lower()
@@ -124,7 +132,7 @@ class Words():
             return
         #bag2 will be delete from Bags after unite
         self.Bags.unite(bag1, bag2)
-        for x in bag2.set:
+        for x in bag1.set:
             self[x][0] = bag1
 
 
