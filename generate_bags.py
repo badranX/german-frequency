@@ -14,6 +14,7 @@ important_parts = {
     "ADJ",
     "ADV",
     "NN" } 
+
 with open(fm, 'r') as f:
     isIch = True
     counter = 1 #  making 0 == unkown
@@ -53,29 +54,6 @@ pars = parsing.Parser(d)
 
 pars.parse("./data/text.txt", "./data/test.txt")
 
-with open("./data/text.txt", 'r') as f:
-    text = f.read()
-print(text)
-
-import re
-with open("./data/test.txt", 'w') as f:
-    words = re.split('\W+', text)
-    words = list(set(words))
-    ordered_words = []
-    unrecognized = []
-    for w in words:
-        order = 0
-        if w in d:
-            order = d[w][0].order
-            ordered_words.append([w, order])
-        else:
-            unrecognized.append(w)
-    ordered_words = sorted(ordered_words, key=lambda v: v[1], reverse = True)
-    for w in ordered_words:
-        f.write(w[0] + ' ' + str(w[1]) + ' \n')
-    for w in unrecognized:
-        f.write(w + ' ' + '!!!!!!' + ' \n')
-
 
 
 #top 5000 words
@@ -90,7 +68,7 @@ with open("./data/5000.txt", 'w') as f:
             if freq > max_freq:
                 most_freq_word = w
                 max_freq = freq
-        f. write(most_freq_word + '\n')
+        f. write(d.word(most_freq_word) + '\n')
         counter += 1
         if counter > 5000:
             break

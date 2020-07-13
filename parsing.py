@@ -13,7 +13,7 @@ class Parser():
     def __init__(self, dictionary):
         self.d=dictionary
         self.grammar=Grammar(dictionary)
-
+    #TODO UNUSED
     def search_dict(self, word):
         word=word.lower()
         words = self.grammar.compose(word)
@@ -39,7 +39,27 @@ class Parser():
         else:
             return min(max_order_in_components, order), components   
 
-    def parse (self, input_file, output_file):
+    def stats(self, list):
+        found_orders = set()
+        max_order = -1
+        for w in list:
+            order = self.d.bag(w).order 
+            found_orders.add(w)
+            if order > max_order:
+                max_order = order
+            
+
+    #TODO TODO TODO This will parse multiple files
+    import os
+    def parse_folders(self, directory):
+        dirs = os.listdir(directory)
+        for f in dirs:
+            if f[-4:] != '.out':
+            f= os.path.join(directory,f)
+            recognized = self.parse(f)
+
+
+    def parse (self, input_file, output_file=None):
         recognized=set()
         unrecognized=set()
         with open(input_file, 'r') as f:
@@ -62,9 +82,12 @@ class Parser():
                             recognized.add((w, order))
                         else:
                             unrecognized.add(w)
-        with open(output_file, 'w') as f_out:
-            ordered_words=sorted(recognized, key=lambda v: v[1], reverse=True)
-            for w in ordered_words:
-                f_out.write(w[0] + ' ' + str(w[1]) + '\n')
-            for w in unrecognized:
-                f_out.write(w + ' ' + '!!!!!!' + '\n')
+        if output_file:
+            with open(output_file, 'w') as f_out:
+                ordered_words=sorted(recognized, key=lambda v: v[1], reverse=True)
+                for w in ordered_words:
+                    f_out.write(w[0] + ' ' + str(w[1]) + '\n')
+                for w in unrecognized:
+                    f_out.write(w + ' ' + '!!!!!!' + '\n')
+        else:
+            return recognized

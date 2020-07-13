@@ -57,7 +57,10 @@ class Bags():
         if self.list:
             return item in self.list
     def get_top(self, num):
-        tmp = sorted(list(self.set), key= lambda v: v.frequency , reverse = True)
+        tmp = self.list
+        #TODO
+        #if self.set:
+        #    tmp = sorted(list(self.set), key= lambda v: v.frequency , reverse = True)
         return tmp[0:num]
 
 
@@ -135,7 +138,7 @@ class Words():
         for x in bag1.set:
             self[x][0] = bag1
 
-
+    #TODO change word to str or somehting
     def word(self, key):
         #using Python 3.7 gurantees for the "dict"to have ordered keys
         return list(self.indexer.keys())[key]
