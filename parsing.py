@@ -55,7 +55,7 @@ class Parser():
         dirs = os.listdir(directory)
         for f in dirs:
             if f[-4:] != '.out':
-            f= os.path.join(directory,f)
+            f = os.path.join(directory,f)
             recognized = self.parse(f)
 
 

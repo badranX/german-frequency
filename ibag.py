@@ -1,5 +1,6 @@
 from functools import total_ordering
 from grammar import Part
+from CaseInsensitiveDict import CaseInsensitiveDict
 
 @total_ordering
 class Bag():
@@ -9,8 +10,6 @@ class Bag():
         self.frequency = 0
         self.order = 0
         self.hash = args[0][0]
-    def __del__(self, *args):
-        super().__init__( *args)
     def __lt__(self, other):
         return self.frequency < other.frequency
     def union(self, other):
@@ -44,13 +43,18 @@ class Bags():
         self.discard(bag2)
     #After loading frequencies
     def load_order(self):
-        tmp = sorted(list(self.set), key= lambda v: v.frequency , reverse = True)
-        counter = 1
-        for x in tmp:
-            x.order = counter
-            counter += 1
-        self.list = tmp
-        del(self.set)
+        if self.set:
+            tmp = sorted(list(self.set), key= lambda v: v.frequency , reverse = True)
+            counter = 1
+            for x in tmp:
+                x.order = counter
+                counter += 1
+            self.list = tmp
+            del(self.set)
+        else:
+            pass
+            #TODO check for bugs
+            #order has been done
     def __contains__(self, item):
         if self.set:
             return item in self.set
@@ -62,28 +66,34 @@ class Bags():
         #if self.set:
         #    tmp = sorted(list(self.set), key= lambda v: v.frequency , reverse = True)
         return tmp[0:num]
-
+    #Reduce the sise of Bags to "new_size", leaves the most frequent ones
+    def resize(self, new_size):
+        tmp = self.list
+        self.list = tmp[0:new_size]
+        del(tmp)
+    
 
 class Words():
+    #3 dictionaries d,indexer, and reversed_indexer. Handling them via Words() is the right way to gurantee case-insensitivity and keeping the keys with the right case. Apple will be saved Apple but apple will return what Words["Apple"] return
     def __init__(self, *args):
         super().__init__(*args)
         self.indexer = {}
+        #reversed_indexer will be populated after calling resize_respect_freq() for fast reverse indexing in method word()
+        self.reversed_indexer = {}
         self.d = {}
         self.Bags = Bags()
         self.counter = 0
-
+    
     def __contains__(self,  key):
         if isinstance(key, int):
             return key in self.d
         else:
-            key = key.lower()
             return key in self.indexer
 
     def __getitem__(self, key):
         if isinstance(key, int):
             return self.d[key]
         else:
-            key = key.lower()
             return self.d[self.indexer[key]]
 
     def __setitem__(self, key, val):
@@ -91,18 +101,17 @@ class Words():
             assert(key in self.d)
             self.d[key] = val
         else:
-            key = key.lower()
-            if key in self.indexer:
-                self.d[self.indexer[key.lower()]] = val
+            #key = key.lower()
+            if key in self.indexer: 
+                self.d[self.indexer[key]] = val
             else:
-                self.indexer[key.lower()] = self.counter
+                self.indexer[key] = self.counter
                 self.d[self.counter] = val
                 self.counter += 1
 
     def add_empty(self, word):
         assert(not isinstance(word, int))
         assert(word not in self)
-        word = word.lower()
         self[word] = None
         bag = Bag([self.indexer[word]])
         self[word] =  [bag, False, 0]
@@ -114,16 +123,16 @@ class Words():
         self[word][1] = True
 
     def combine_bags(self, word1, word2):
-        word1 = word1.lower()
-        word2 = word2.lower()
+        #word1_lower = word1.lower()
+        #word2_lower = word2.lower()
         
-        if word1 == word2: #this is not needed but a small optemization
-            return
+        #if word1_lower == word2_lower: #this is not needed but a small optemization
+        #    return
         #TODO warning two equal words cause a bug
         if word1 in self:
             bag1 = self[word1][0]
         else:
-            raise Exception()
+            raise Exception("it's a bag, so it should be indexed before calling this")
         if word2 in self:
             bag2 = self[word2][0]
         else:
@@ -139,8 +148,11 @@ class Words():
             self[x][0] = bag1
 
     #TODO change word to str or somehting
+    #returns the string of the word. The key in self.indexer from the value
     def word(self, key):
         #using Python 3.7 gurantees for the "dict"to have ordered keys
+        if len(self.reversed_indexer) > 0:
+            return self.reversed_indexer[key]
         return list(self.indexer.keys())[key]
     def bag_to_str(self, key):
         l = list(self.indexer.keys())
@@ -172,6 +184,7 @@ class Words():
             self.Bags.load_order()
 
 
+    #TODO is this obselet?
     def get_most_frequent_in_bag(self, bag):
         maximum = -1
         result = None
@@ -181,3 +194,20 @@ class Words():
                 maximum = frequency
                 result = x
             return (x, maximum)
+
+    #TODO must be used only after ordering by frequency
+    def resize_respect_freq(self, new_size):
+        reverse_map = dict((reversed(item) for item in self.indexer.items()))
+        for bag in self.Bags.list[new_size :]:
+            for key in bag.set:
+                #TODO bags are disjoint and key should exist in self.d
+                if key not in self.d and key not in reverse_map:
+                    continue
+                tmp = reverse_map[key]
+                if tmp in self.indexer:#TODO IMPORTANT: this is a bug it should exist
+                    del self.indexer[tmp]
+                del self.d[key]
+                del reverse_map[key]
+            del bag
+        self.Bags.resize(new_size)
+        self.reversed_indexer =reverse_map  
