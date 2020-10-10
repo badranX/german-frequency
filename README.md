@@ -7,1003 +7,1003 @@ The file 5000.txt (in the 'data' folder) contains top 5000 German words ranked b
 
 ## Top 1000 German word (ommiting their morphologies):
 
-     1.ich
-     2.das
-     3.hat
-     4.ein
-     5.nicht
-     6.und
-     7.zu
-     8.in
-     9.was
-    10.wird
-    11.kann
-    12.mit
-    13.ja
-    14.wie
-    15.auf
-    16.dass
-    17.aber
-    18.will
-    19.an
-    20.gut
-    21.so
-    22.von
-    23.hier
-    24.sagen
-    25.bitte
-    26.für
-    27.geht
-    28.komm
-    29.machen
-    30.wenn
-    31.keine
-    32.alles
-    33.muss
-    34.nein
-    35.diese
-    36.sehen
-    37.noch
-    38.da
-    39.tun
-    40.nur
-    41.weiß
-    42.soll
-    43.schon
-    44.auch
-    45.mal
-    46.als
-    47.jetzt
-    48.um
-    49.aus
-    50.dann
-    51.doch
-    52.hör
-    53.lassen
-    54.oder
-    55.dachte
-    56.nach
-    57.viel
-    58.bei
-    59.nichts
-    60.man
-    61.wo
-    62.wissen
-    63.etwas
-    64.oh
-    65.mehr
-    66.also
-    67.danke
-    68.wer
-    69.immer
-    70.warum
-    71.ganz
-    72.vor
-    73.los
-    74.liebe
-    75.glaube
-    76.wieder
-    77.finden
-    78.leben
-    79.sehr
-    80.okay
-    81.denn
-    82.möchte
-    83.vielleicht
-    84.brauchen
-    85.über
-    86.anderen
-    87.nehmen
-    88.wirklich
-    89.einfach
-    90.nie
-    91.weg
-    92.hey
-    93.bringen
-    94.hause
-    95.leid
-    96.weil
-    97.warte
-    98.fall
-    99.verstehe
-    100.lange
-    101.reden
-    102.bleiben
-    103.jeder
-    104.nun
-    105.schön
-    106.heute
-    107.tag
-    108.sicher
-    109.steht
-    110.fragen
-    111.fahren
-    112.weiter
-    113.jemand
-    114.damit
-    115.kennen
-    116.bis
-    117.kleine
-    118.erst
-    119.zurück
-    120.helfen
-    121.große
-    122.na
-    123.zwei
-    124.hallo
-    125.alter
-    126.halten
-    127.sprechen
-    128.genau
-    129.versuchen
-    130.morgen
-    131.passiert
-    132.klar
-    133.richtig
-    134.spielen
-    135.junge
-    136.neue
-    137.darf
-    138.ab
-    139.gerade
-    140.heißt
-    141.durch
-    142.letzte
-    143.gleich
-    144.töten
-    145.sterben
-    146.raus
-    147.ob
-    148.paar
-    149.nächste
-    150.bekommen
-    151.verdammt
-    152.suchen
-    153.wohl
-    154.erzählt
-    155.scheiße
-    156.läuft
-    157.krieg
-    158.selbst
-    159.her
-    160.recht
-    161.arbeiten
-    162.ohne
-    163.essen
-    164.schnell
-    165.tot
-    166.stimmt
-    167.holen
-    168.gar
-    169.wieso
-    170.treffen
-    171.beide
-    172.dort
-    173.natürlich
-    174.stellen
-    175.später
-    176.niemand
-    177.ruf
-    178.seit
-    179.ach
-    180.davon
-    181.zeigen
-    182.dinge
-    183.allein
-    184.vergessen
-    185.verloren
-    186.dafür
-    187.drei
-    188.wegen
-    189.hin
-    190.rein
-    191.welche
-    192.schau
-    193.sorgen
-    194.unter
-    195.fühle
-    196.schlafen
-    197.schaffen
-    198.zusammen
-    199.liegt
-    200.wahr
-    201.ziehen
-    202.genug
-    203.echt
-    204.setzen
-    205.gegen
-    206.wenig
-    207.toll
-    208.einmal
-    209.sonst
-    210.erinnern
-    211.nennen
-    212.dabei
-    213.sofort
-    214.halt
-    215.ende
-    216.pass
-    217.bevor
-    218.stunden
-    219.entschuldigen
-    220.einzige
-    221.schlecht
-    222.fangen
-    223.verschwinden
-    224.hoch
-    225.fertig
-    226.trinken
-    227.wann
-    228.schicken
-    229.verrückt
-    230.früher
-    231.darüber
-    232.ne
-    233.freunde
-    234.bereit
-    235.daran
-    236.wichtig
-    237.dazu
-    238.schreiben
-    239.reicht
-    240.eigentlich
-    241.nett
-    242.schlagen
-    243.kurz
-    244.hoffe
-    245.gern
-    246.sitzen
-    247.teil
-    248.bedeutet
-    249.egal
-    250.falsch
-    251.verlassen
-    252.all
-    253.legen
-    254.lernen
-    255.schwer
-    256.lesen
-    257.glück
-    258.einige
-    259.schuld
-    260.schlimm
-    261.retten
-    262.tragen
-    263.angerufen
-    264.bisschen
-    265.scheint
-    266.darauf
-    267.bald
-    268.kaufen
-    269.ruhe
-    270.kümmern
-    271.runter
-    272.voll
-    273.ruhig
-    274.arm
-    275.eigenen
-    276.draußen
-    277.hinter
-    278.folgen
-    279.wagen
-    280.versprochen
-    281.bestimmt
-    282.ziemlich
-    283.vorbei
-    284.plan
-    285.herz
-    286.hi
-    287.fast
-    288.gerne
-    289.dran
-    290.wach
-    291.umbringen
-    292.gewinnen
-    293.sogar
-    294.überhaupt
-    295.stark
-    296.he
-    297.drin
-    298.vertrauen
-    299.wünschte
-    300.lachen
-    301.darum
-    302.frei
-    303.woher
-    304.steckt
-    305.je
-    306.fliegen
-    307.laut
-    308.während
-    309.endlich
-    310.hasse
-    311.erwartet
-    312.oben
-    313.klingt
-    314.heiraten
-    315.niemals
-    316.glücklich
-    317.bezahlen
-    318.fünf
-    319.lügen
-    320.etwa
-    321.beweise
-    322.ernst
-    323.anders
-    324.gestern
-    325.möglich
-    326.erklären
-    327.verkaufen
-    328.vier
-    329.süß
-    330.zimmer
-    331.eben
-    332.benutzt
-    333.anfangen
-    334.miss
-    335.deshalb
-    336.ändern
-    337.film
-    338.freut
-    339.beginnen
-    340.kämpfen
-    341.zwischen
-    342.spaß
-    343.schreit
-    344.fest
-    345.dies
-    346.manchmal
-    347.wiedersehen
-    348.aufhören
-    349.wein
-    350.entschuldigung
-    351.wohnen
-    352.verdient
-    353.reise
-    354.äh
-    355.versteckt
-    356.platz
-    357.schiff
-    358.schule
-    359.unten
-    360.funktioniert
-    361.bloß
-    362.schätze
-    363.geschehen
-    364.hart
-    365.böse
-    366.dumm
-    367.ehrlich
-    368.brechen
-    369.dauert
-    370.zahlen
-    371.werfen
-    372.aussehen
-    373.langsam
-    374.dasselbe
-    375.zeug
-    376.solche
-    377.oft
-    378.wohin
-    379.leicht
-    380.entscheiden
-    381.singen
-    382.bewegen
-    383.besuch
-    384.menge
-    385.öffnen
-    386.drauf
-    387.wahrscheinlich
-    388.falls
-    389.irgendwie
-    390.verbrechen
-    391.krank
-    392.drehen
-    393.interessiert
-    394.hübsch
-    395.hierher
-    396.irgendwas
-    397.zuerst
-    398.verletzt
-    399.bereits
-    400.gestohlen
-    401.tanzen
-    402.außer
-    403.erledigt
-    404.direkt
-    405.froh
-    406.großartig
-    407.steig
-    408.sondern
-    409.schwarze
-    410.erfahren
-    411.schießen
-    412.willkommen
-    413.ließ
-    414.besorgt
-    415.vorstellen
-    416.kaum
-    417.klappe
-    418.erkennen
-    419.hängt
-    420.sechs
-    421.opfer
-    422.zehn
-    423.wert
-    424.acht
-    425.buch
-    426.ehre
-    427.fehlt
-    428.bauen
-    429.halb
-    430.zweite
-    431.überall
-    432.laden
-    433.ansehen
-    434.vermisst
-    435.perfekt
-    436.völlig
-    437.zerstört
-    438.herausfinden
-    439.trotzdem
-    440.still
-    441.hm
-    442.erde
-    443.schwierig
-    444.weh
-    445.behalten
-    446.cool
-    447.licht
-    448.druck
-    449.raten
-    450.tief
-    451.i
-    452.normal
-    453.wunder
-    454.angriff
-    455.schwöre
-    456.schrecklich
-    457.deswegen
-    458.danach
-    459.träume
-    460.total
-    461.spannende
-    462.lustig
-    463.sinn
-    464.melden
-    465.schade
-    466.regeln
-    467.ziel
-    468.stören
-    469.gefährlich
-    470.überleben
-    471.treten
-    472.erreichen
-    473.wow
-    474.beruhigen
-    475.blöd
-    476.fassen
-    477.selber
-    478.nochmal
-    479.nachdem
-    480.komisch
-    481.kostet
-    482.himmel
-    483.guck
-    484.drüben
-    485.rot
-    486.persönlich
-    487.deutsche
-    488.übernehmen
-    489.weise
-    490.irgendwo
-    491.haare
-    492.tja
-    493.genauso
-    494.wunderbar
-    495.vorsichtig
-    496.damals
-    497.zwar
-    498.verzeihen
-    499.beeil
-    500.unglaublich
-    501.ärger
-    502.seltsam
-    503.heilige
-    504.kalt
-    505.antworten
-    506.stolz
-    507.irgendeine
-    508.nachgedacht
-    509.bekannt
-    510.merken
-    511.rolle
-    512.o
-    513.offen
-    514.fürchte
-    515.nähe
-    516.karte
-    517.schließen
-    518.sobald
-    519.super
-    520.irre
-    521.muß
-    522.schmerz
-    523.außerdem
-    524.beschützen
-    525.besteht
-    526.schloss
-    527.interessant
-    528.stopp
-    529.klasse
-    530.solange
-    531.entfernt
-    532.verändert
-    533.erwischt
-    534.jemals
-    535.besonders
-    536.eher
-    537.küssen
-    538.wenigstens
-    539.wette
-    540.absolut
-    541.verlangt
-    542.unmöglich
-    543.nötig
-    544.a
-    545.traurig
-    546.heraus
-    547.mitnehmen
-    548.sieben
-    549.rennen
-    550.hinten
-    551.bieten
-    552.dunkel
-    553.fick
-    554.besitz
-    555.plötzlich
-    556.schützen
-    557.verheiratet
-    558.wunderschön
-    559.aufhalten
-    560.frank
-    561.verliebt
-    562.tisch
-    563.zählt
-    564.schnappen
-    565.griff
-    566.riecht
-    567.überlegen
-    568.springen
-    569.vorher
-    570.gewissen
-    571.erhalten
-    572.beenden
-    573.tatsächlich
-    574.dienst
-    575.treiben
-    576.verfolgt
-    577.blick
-    578.feind
-    579.schritt
-    580.verraten
-    581.überprüfen
-    582.besonderes
-    583.fort
-    584.überrascht
-    585.verhaftet
-    586.erlaubt
-    587.wütend
-    588.zurückkommen
-    589.spüren
-    590.kochen
-    591.packen
-    592.wählen
-    593.obwohl
-    594.spur
-    595.band
-    596.angetan
-    597.aufgeben
-    598.behandelt
-    599.dagegen
-    600.gezwungen
-    601.preis
-    602.verpasst
-    603.handeln
-    604.dringend
-    605.rum
-    606.ständig
-    607.rauchen
-    608.rücken
-    609.befehle
-    610.überzeugt
-    611.aufwachen
-    612.leer
-    613.atmen
-    614.schwach
-    615.unterwegs
-    616.jagen
-    617.aufgenommen
-    618.zuhause
-    619.landen
-    620.schnitt
-    621.ewig
-    622.naja
-    623.herum
-    624.angenommen
-    625.fremden
-    626.geboren
-    627.rüber
-    628.müde
-    629.irgendetwas
-    630.gemeinsam
-    631.sauber
-    632.verwenden
-    633.beschäftigt
-    634.herkommen
-    635.betrogen
-    636.ermordet
-    637.geschenkt
-    638.manche
-    639.aufgeregt
-    640.lösen
-    641.derjenige
-    642.nutzen
-    643.blau
-    644.wirkt
-    645.erwachsen
-    646.beobachtet
-    647.wozu
-    648.bar
-    649.feiern
-    650.fisch
-    651.verflucht
-    652.fressen
-    653.getrennt
-    654.furchtbar
-    655.leisten
-    656.eingeladen
-    657.ring
-    658.kraft
-    659.links
-    660.frisch
-    661.aufpassen
-    662.wofür
-    663.wild
-    664.darin
-    665.sonne
-    666.dahin
-    667.decke
-    668.menschliche
-    669.leck
-    670.warm
-    671.entspann
-    672.dritte
-    673.irgendwann
-    674.ehe
-    675.jedenfalls
-    676.dick
-    677.kaputt
-    678.gefeuert
-    679.hoffentlich
-    680.tschüss
-    681.sowieso
-    682.liste
-    683.wand
-    684.leise
-    685.unbedingt
-    686.trauen
-    687.zumindest
-    688.runde
-    689.bisher
-    690.verbunden
-    691.heil
-    692.offensichtlich
-    693.gewarnt
-    694.neben
-    695.ergibt
-    696.gesund
-    697.nick
-    698.erwähnt
-    699.sauer
-    700.brennt
-    701.nerven
-    702.angekommen
-    703.vergeben
-    704.entdeckt
-    705.mitgebracht
-    706.übel
-    707.unterschied
-    708.unschuldig
-    709.schlampe
-    710.klingelt
-    711.angestellt
-    712.befindet
-    713.lächeln
-    714.betrunken
-    715.rechts
-    716.willen
-    717.verdächtigen
-    718.schuldig
-    719.übrig
-    720.fuß
-    721.irgendwelche
-    722.park
-    723.erlebt
-    724.vorbereitet
-    725.ausgehen
-    726.vermutlich
-    727.erschießen
-    728.diesmal
-    729.ha
-    730.verantwortlich
-    731.stöhnt
-    732.klopfen
-    733.probieren
-    734.grab
-    735.erschossen
-    736.geklaut
-    737.klug
-    738.unternehmen
-    739.fantastisch
-    740.witzig
-    741.gegenüber
-    742.schmeckt
-    743.vergnügen
-    744.verbrannt
-    745.miteinander
-    746.regen
-    747.abholen
-    748.abhauen
-    749.grenze
-    750.ran
-    751.nämlich
-    752.beten
-    753.aufgetaucht
-    754.fliehen
-    755.grün
-    756.übrigens
-    757.bombe
-    758.gründe
-    759.loch
-    760.quatsch
-    761.verhalten
-    762.nervös
-    763.soweit
-    764.indem
-    765.eis
-    766.unterschreiben
-    767.erfolg
-    768.aufstehen
-    769.erscheinen
-    770.bemerkt
-    771.kapiert
-    772.namens
-    773.empfangen
-    774.entweder
-    775.heim
-    776.geheim
-    777.weder
-    778.anziehen
-    779.jawohl
-    780.gast
-    781.ungefähr
-    782.hals
-    783.entkommen
-    784.zuvor
-    785.bestellt
-    786.geschossen
-    787.verboten
-    788.drinnen
-    789.flucht
-    790.behauptet
-    791.mitkommen
-    792.herein
-    793.ernsthaft
-    794.worauf
-    795.ähnlich
-    796.genießen
-    797.aussage
-    798.scherz
-    799.beeindruckt
-    800.befreien
-    801.vertrag
-    802.vögel
-    803.ball
-    804.schwanger
-    805.wiederhole
-    806.fern
-    807.bestätigt
-    808.kontrollieren
-    809.teuer
-    810.konzentrieren
-    811.gilt
-    812.benehmen
-    813.akzeptieren
-    814.leiten
-    815.hingehen
-    816.zurückkehren
-    817.lächerlich
-    818.vorne
-    819.grüß
-    820.heben
-    821.sowas
-    822.herzlichen
-    823.streiten
-    824.begriff
-    825.neun
-    826.begleiten
-    827.anklage
-    828.untersuchen
-    829.reinkommen
-    830.richten
-    831.erschreckt
-    832.reiten
-    833.existiert
-    834.verschiedene
-    835.pro
-    836.zufrieden
-    837.hinterlassen
-    838.rauskommen
-    839.allerdings
-    840.erfüllt
-    841.unterhalten
-    842.riesige
-    843.enttäuscht
-    844.statt
-    845.sieg
-    846.entführt
-    847.starten
-    848.worüber
-    849.davor
-    850.fernsehen
-    851.englisch
-    852.entwickelt
-    853.nachts
-    854.zuhören
-    855.fett
-    856.stich
-    857.waschen
-    858.berichten
-    859.post
-    860.berührt
-    861.anbieten
-    862.reparieren
-    863.fein
-    864.scharf
-    865.amerikanische
-    866.komplett
-    867.schweigen
-    868.sorry
-    869.entlang
-    870.einverstanden
-    871.zufällig
-    872.gesamte
-    873.maul
-    874.mitten
-    875.irgendjemand
-    876.vergehen
-    877.ecke
-    878.beschissen
-    879.hexe
-    880.reiß
-    881.wundervoll
-    882.stammt
-    883.umgehen
-    884.anhalten
-    885.aha
-    886.ruiniert
-    887.schließlich
-    888.zustand
-    889.schlau
-    890.merkwürdig
-    891.vernichten
-    892.betrifft
-    893.verarschen
-    894.übersetzt
-    895.riskieren
-    896.wahnsinnig
-    897.beigebracht
-    898.au
-    899.besprechen
-    900.blind
-    901.form
-    902.liefern
-    903.unterstützen
-    904.daher
-    905.offenbar
-    906.wechseln
-    907.französisch
-    908.linken
-    909.nee
-    910.vorwärts
-    911.überlassen
-    912.beantworten
-    913.studiert
-    914.berühmt
-    915.hinaus
-    916.albern
-    917.freundlich
-    918.reihe
-    919.angeht
-    920.einsam
-    921.worum
-    922.zulassen
-    923.kehren
-    924.pfeift
-    925.mächtig
-    926.ertragen
-    927.fair
-    928.langweilig
-    929.verwandelt
-    930.schwul
-    931.hure
-    932.schalten
-    933.weich
-    934.verhindern
-    935.sammeln
-    936.lehren
-    937.gewöhnt
-    938.informiert
-    939.gestoßen
-    940.vollkommen
-    941.pause
-    942.senden
-    943.rauf
-    944.begegnet
-    945.berge
-    946.klären
-    947.dorthin
-    948.sparen
-    949.rührt
-    950.anfassen
-    951.vermute
-    952.begangen
-    953.jene
-    954.wecken
-    955.brav
-    956.betrachten
-    957.verlobt
-    958.verwirrt
-    959.kompliziert
-    960.verteidigen
-    961.aufmachen
-    962.selten
-    963.festhalten
-    964.dankbar
-    965.vorhin
-    966.nackt
-    967.urlaub
-    968.lebendig
-    969.wenden
-    970.daraus
-    971.reagiert
-    972.reizend
-    973.private
-    974.presse
-    975.stinkt
-    976.offiziell
-    977.streich
-    978.erfunden
-    979.einstellen
-    980.taucht
-    981.geil
-    982.eng
-    983.besiegen
-    984.überfallen
-    985.weitermachen
-    986.braut
-    987.seitdem
-    988.normalerweise
-    989.verurteilt
-    990.schämen
-    991.schieben
-    992.billig
-    993.mindestens
-    994.prima
-    995.räumen
-    996.bellt
-    997.mies
-    998.drüber
-    999.hässlich
-    1000.stürzen
+     1	ich
+     2	ein
+     3	nicht
+     4	und
+     5	zu
+     6	wird
+     7	kann
+     8	mit
+     9	ja
+    10	wie
+    11	auf
+    12	dass
+    13	aber
+    14	gut
+    15	weiß
+    16	so
+    17	von
+    18	hier
+    19	sagen
+    20	bitte
+    21	für
+    22	komm
+    23	machen
+    24	wenn
+    25	keine
+    26	muss
+    27	diese
+    28	nein
+    29	mehr
+    30	noch
+    31	da
+    32	tun
+    33	nur
+    34	soll
+    35	schon
+    36	auch
+    37	mal
+    38	als
+    39	jetzt
+    40	um
+    41	aus
+    42	dann
+    43	hör
+    44	doch
+    45	oder
+    46	dachte
+    47	bei
+    48	nichts
+    49	wo
+    50	etwas
+    51	Mann
+    52	oh
+    53	also
+    54	danke
+    55	immer
+    56	warum
+    57	ganz
+    58	weg
+    59	vor
+    60	liebe
+    61	glaube
+    62	leben
+    63	wieder
+    64	finden
+    65	sehr
+    66	okay
+    67	denn
+    68	möchte
+    69	über
+    70	brauchen
+    71	vielleicht
+    72	anderen
+    73	nehmen
+    74	fall
+    75	wirklich
+    76	einfach
+    77	halt
+    78	Frau
+    79	nie
+    80	hey
+    81	hause
+    82	bringen
+    83	tag
+    84	zeit
+    85	leid
+    86	weil
+    87	warte
+    88	verstehe
+    89	lange
+    90	fahren
+    91	reden
+    92	bleiben
+    93	jeder
+    94	nun
+    95	schön
+    96	heute
+    97	sicher
+    98	junge
+    99	fragen
+   100	Gott
+   101	weiter
+   102	jemand
+   103	arbeit
+   104	damit
+   105	kennen
+   106	Jahre
+   107	bis
+   108	kleine
+   109	erst
+   110	zurück
+   111	große
+   112	helfen
+   113	na
+   114	sprechen
+   115	Kinder
+   116	zwei
+   117	hallo
+   118	alter
+   119	Leute
+   120	Vater
+   121	Freund
+   122	genau
+   123	versuchen
+   124	morgen
+   125	passiert
+   126	klar
+   127	richtig
+   128	spielen
+   129	neue
+   130	darf
+   131	ab
+   132	gerade
+   133	durch
+   134	Geld
+   135	letzte
+   136	töten
+   137	gleich
+   138	recht
+   139	menschen
+   140	sterben
+   141	raus
+   142	Mutter
+   143	ob
+   144	paar
+   145	nächste
+   146	Herr
+   147	bekommen
+   148	Namen
+   149	wohl
+   150	krieg
+   151	scheiße
+   152	verdammt
+   153	suchen
+   154	erzählt
+   155	nacht
+   156	läuft
+   157	essen
+   158	selbst
+   159	her
+   160	ohne
+   161	schnell
+   162	tot
+   163	stimmt
+   164	holen
+   165	gar
+   166	wieso
+   167	treffen
+   168	beide
+   169	dort
+   170	natürlich
+   171	stellen
+   172	später
+   173	Sache
+   174	niemand
+   175	ordnung
+   176	ruf
+   177	dinge
+   178	liegt
+   179	Mädchen
+   180	vergessen
+   181	seit
+   182	welche
+   183	ach
+   184	davon
+   185	zeigen
+   186	Problem
+   187	allein
+   188	verloren
+   189	dafür
+   190	drei
+   191	hin
+   192	rein
+   193	schau
+   194	abend
+   195	sorgen
+   196	unter
+   197	angst
+   198	Welt
+   199	schaffen
+   200	fühle
+   201	schlafen
+   202	Musik
+   203	Hand
+   204	zusammen
+   205	wahr
+   206	ziehen
+   207	Bruder
+   208	Moment
+   209	genug
+   210	echt
+   211	setzen
+   212	Sohn
+   213	gegen
+   214	wenig
+   215	toll
+   216	einmal
+   217	sonst
+   218	Familie
+   219	erinnern
+   220	pass
+   221	Schatz
+   222	nennen
+   223	dabei
+   224	sofort
+   225	ende
+   226	Augen
+   227	bevor
+   228	stunden
+   229	Minuten
+   230	entschuldigen
+   231	einzige
+   232	schlecht
+   233	fangen
+   234	plan
+   235	verschwinden
+   236	hoch
+   237	trinken
+   238	fertig
+   239	angerufen
+   240	wann
+   241	schicken
+   242	Woche
+   243	Hilfe
+   244	verrückt
+   245	früher
+   246	darüber
+   247	Land
+   248	ne
+   249	bereit
+   250	daran
+   251	wichtig
+   252	teil
+   253	Kopf
+   254	dazu
+   255	schlagen
+   256	schreiben
+   257	reicht
+   258	verlassen
+   259	eigentlich
+   260	Stadt
+   261	nett
+   262	Grund
+   263	kurz
+   264	hoffe
+   265	Typ
+   266	Wort
+   267	gern
+   268	Auto
+   269	sitzen
+   270	kämpfen
+   271	bedeutet
+   272	egal
+   273	Tür
+   274	Kerl
+   275	falsch
+   276	Uhr
+   277	anfangen
+   278	glück
+   279	lernen
+   280	schwer
+   281	einige
+   282	schuld
+   283	schlimm
+   284	Waffe
+   285	retten
+   286	tragen
+   287	bisschen
+   288	scheint
+   289	darauf
+   290	bald
+   291	wünschte
+   292	kaufen
+   293	Tod
+   294	ruhe
+   295	kümmern
+   296	runter
+   297	voll
+   298	Monate
+   299	ruhig
+   300	arm
+   301	Polizei
+   302	eigenen
+   303	draußen
+   304	Idee
+   305	wagen
+   306	hinter
+   307	herz
+   308	Geschichte
+   309	folgen
+   310	versprochen
+   311	bestimmt
+   312	Teufel
+   313	Tochter
+   314	ziemlich
+   315	vorbei
+   316	Schwester
+   317	hi
+   318	Ahnung
+   319	fast
+   320	Job
+   321	gerne
+   322	dran
+   323	wach
+   324	umbringen
+   325	gewinnen
+   326	sogar
+   327	überhaupt
+   328	stark
+   329	vertrauen
+   330	Ort
+   331	drin
+   332	frei
+   333	lachen
+   334	darum
+   335	heiraten
+   336	woher
+   337	steckt
+   338	je
+   339	Wasser
+   340	hasse
+   341	fliegen
+   342	laut
+   343	während
+   344	endlich
+   345	erwartet
+   346	oben
+   347	lügen
+   348	laden
+   349	klingt
+   350	Traum
+   351	niemals
+   352	schließen
+   353	glücklich
+   354	bezahlen
+   355	fünf
+   356	etwa
+   357	beweise
+   358	ernst
+   359	Feuer
+   360	miss
+   361	chance
+   362	schießen
+   363	Wahrheit
+   364	anders
+   365	gestern
+   366	Blut
+   367	vier
+   368	verkaufen
+   369	möglich
+   370	zimmer
+   371	erklären
+   372	Gesicht
+   373	süß
+   374	platz
+   375	eben
+   376	benutzt
+   377	Freundin
+   378	Antwort
+   379	Captain
+   380	deshalb
+   381	ändern
+   382	buch
+   383	freut
+   384	beginnen
+   385	Bett
+   386	schiff
+   387	spaß
+   388	zwischen
+   389	schreit
+   390	fest
+   391	Hund
+   392	entschuldigung
+   393	oft
+   394	manchmal
+   395	solche
+   396	wiedersehen
+   397	wein
+   398	aufhören
+   399	verdient
+   400	wohnen
+   401	Bild
+   402	äh
+   403	versteckt
+   404	Gefühl
+   405	Nachricht
+   406	schule
+   407	unten
+   408	funktioniert
+   409	Papa
+   410	bloß
+   411	i
+   412	geschehen
+   413	Arsch
+   414	hart
+   415	dauert
+   416	böse
+   417	werfen
+   418	dumm
+   419	ehrlich
+   420	zeug
+   421	brechen
+   422	John
+   423	aussehen
+   424	zahlen
+   425	langsam
+   426	dasselbe
+   427	Nummer
+   428	wohin
+   429	leicht
+   430	verbrechen
+   431	entscheiden
+   432	besuch
+   433	Eltern
+   434	singen
+   435	bewegen
+   436	menge
+   437	öffnen
+   438	König
+   439	drauf
+   440	wahrscheinlich
+   441	irgendwie
+   442	drehen
+   443	krank
+   444	Befehl
+   445	interessiert
+   446	Telefon
+   447	hübsch
+   448	tanzen
+   449	hierher
+   450	irgendwas
+   451	zuerst
+   452	verletzt
+   453	bereits
+   454	gestohlen
+   455	opfer
+   456	Hölle
+   457	Arzt
+   458	Straße
+   459	erledigt
+   460	direkt
+   461	Doktor
+   462	froh
+   463	großartig
+   464	steig
+   465	sondern
+   466	Fehler
+   467	hängt
+   468	schwarze
+   469	erfahren
+   470	willkommen
+   471	besorgt
+   472	vorstellen
+   473	kaum
+   474	Millionen
+   475	klappe
+   476	erkennen
+   477	Sekunden
+   478	sechs
+   479	Kumpel
+   480	stück
+   481	Geschäft
+   482	Mord
+   483	zehn
+   484	Büro
+   485	wert
+   486	acht
+   487	Idiot
+   488	Aufgabe
+   489	himmel
+   490	ehre
+   491	fehlt
+   492	bauen
+   493	vermisst
+   494	halb
+   495	zweite
+   496	überall
+   497	ansehen
+   498	küssen
+   499	licht
+   500	perfekt
+   501	völlig
+   502	zerstört
+   503	herausfinden
+   504	trotzdem
+   505	still
+   506	hm
+   507	erde
+   508	bieten
+   509	schwierig
+   510	weh
+   511	schade
+   512	person
+   513	Luft
+   514	angriff
+   515	behalten
+   516	cool
+   517	druck
+   518	Foto
+   519	tief
+   520	wunder
+   521	normal
+   522	schwöre
+   523	spannende
+   524	schrecklich
+   525	deswegen
+   526	danach
+   527	sinn
+   528	lustig
+   529	erschossen
+   530	fuß
+   531	melden
+   532	fassen
+   533	regeln
+   534	ziel
+   535	stören
+   536	Körper
+   537	treten
+   538	überleben
+   539	Kaffee
+   540	gefährlich
+   541	erreichen
+   542	wow
+   543	beruhigen
+   544	Wind
+   545	links
+   546	raum
+   547	übernehmen
+   548	guck
+   549	blöd
+   550	Party
+   551	Onkel
+   552	selber
+   553	nochmal
+   554	nachdem
+   555	Rest
+   556	wahl
+   557	komisch
+   558	Leiche
+   559	kostet
+   560	Witz
+   561	Sam
+   562	drüben
+   563	rot
+   564	persönlich
+   565	deutsche
+   566	weise
+   567	irgendwo
+   568	haare
+   569	Beine
+   570	Pferd
+   571	tja
+   572	genauso
+   573	wunderbar
+   574	Schlüssel
+   575	Krankenhaus
+   576	vorsichtig
+   577	damals
+   578	zwar
+   579	verzeihen
+   580	beeil
+   581	Gefängnis
+   582	unglaublich
+   583	ärger
+   584	kraft
+   585	seltsam
+   586	Wohnung
+   587	heilige
+   588	kalt
+   589	stolz
+   590	Boss
+   591	Arschloch
+   592	Zukunft
+   593	Geist
+   594	irgendeine
+   595	nachgedacht
+   596	bekannt
+   597	merken
+   598	rolle
+   599	Mund
+   600	Entscheidung
+   601	gedanken
+   602	außerdem
+   603	offen
+   604	wovon
+   605	fürchte
+   606	nähe
+   607	karte
+   608	Boden
+   609	Mörder
+   610	sobald
+   611	schmerz
+   612	Mist
+   613	Michael
+   614	super
+   615	irre
+   616	klasse
+   617	Schluss
+   618	Angebot
+   619	beschützen
+   620	bericht
+   621	stopp
+   622	interessant
+   623	solange
+   624	Charlie
+   625	entfernt
+   626	Sicherheit
+   627	Gäste
+   628	eher
+   629	verändert
+   630	erwischt
+   631	jemals
+   632	besonders
+   633	Brief
+   634	verlangt
+   635	aufgenommen
+   636	Agent
+   637	wenigstens
+   638	wette
+   639	absolut
+   640	Lady
+   641	unmöglich
+   642	Liebling
+   643	Informationen
+   644	nötig
+   645	traurig
+   646	heraus
+   647	Tiere
+   648	Geheimnis
+   649	mitnehmen
+   650	nutzen
+   651	rennen
+   652	sieben
+   653	Meinung
+   654	Vogel
+   655	verwenden
+   656	Präsident
+   657	punkt
+   658	hinten
+   659	besitz
+   660	Soldaten
+   661	Hotel
+   662	fick
+   663	dunkel
+   664	tisch
+   665	gewissen
+   666	Zug
+   667	feind
+   668	plötzlich
+   669	schützen
+   670	verheiratet
+   671	wunderschön
+   672	aufhalten
+   673	frank
+   674	verliebt
+   675	Handy
+   676	zählt
+   677	Kleid
+   678	schnappen
+   679	griff
+   680	treiben
+   681	Bewegung
+   682	riecht
+   683	überlegen
+   684	springen
+   685	vorher
+   686	erhalten
+   687	Verzeihung
+   688	beenden
+   689	tatsächlich
+   690	Anwalt
+   691	York
+   692	Peter
+   693	Geschenk
+   694	Streit
+   695	blick
+   696	bescheid
+   697	verfolgt
+   698	feiern
+   699	Seele
+   700	schritt
+   701	Finger
+   702	Möglichkeit
+   703	verraten
+   704	überprüfen
+   705	Fenster
+   706	kochen
+   707	besonderes
+   708	überrascht
+   709	verhaftet
+   710	erlaubt
+   711	augenblick
+   712	zurückkommen
+   713	schnitt
+   714	spüren
+   715	angenommen
+   716	Tasche
+   717	packen
+   718	Beziehung
+   719	Chef
+   720	schwach
+   721	Polizist
+   722	wählen
+   723	genießen
+   724	obwohl
+   725	kennenzulernen
+   726	rauchen
+   727	handeln
+   728	verpasst
+   729	preis
+   730	angetan
+   731	Test
+   732	behandelt
+   733	fisch
+   734	gezwungen
+   735	verbunden
+   736	dagegen
+   737	rum
+   738	Max
+   739	Boot
+   740	rücken
+   741	dringend
+   742	Schwein
+   743	ständig
+   744	überzeugt
+   745	Bier
+   746	aufwachen
+   747	leer
+   748	atmen
+   749	willen
+   750	unterwegs
+   751	Verbindung
+   752	jagen
+   753	Eier
+   754	zuhause
+   755	partner
+   756	Gesetz
+   757	Hochzeit
+   758	betrogen
+   759	ewig
+   760	Weiss
+   761	fressen
+   762	naja
+   763	Frieden
+   764	herum
+   765	fremden
+   766	geboren
+   767	rüber
+   768	David
+   769	manche
+   770	Richtung
+   771	bar
+   772	müde
+   773	irgendetwas
+   774	reiß
+   775	Paris
+   776	gemeinsam
+   777	sauber
+   778	Unfall
+   779	Volk
+   780	Flugzeug
+   781	beschäftigt
+   782	herkommen
+   783	Schuss
+   784	ermordet
+   785	geschenkt
+   786	mitten
+   787	aufgeregt
+   788	lösen
+   789	derjenige
+   790	Firma
+   791	blau
+   792	wirkt
+   793	erwachsen
+   794	Beispiel
+   795	ring
+   796	Ohren
+   797	decke
+   798	beobachtet
+   799	wozu
+   800	Harry
+   801	grab
+   802	verflucht
+   803	Paul
+   804	Kontrolle
+   805	Berg
+   806	Wald
+   807	getrennt
+   808	furchtbar
+   809	leisten
+   810	liste
+   811	Vorsicht
+   812	Kamera
+   813	Professor
+   814	Computer
+   815	frisch
+   816	aufpassen
+   817	Schuhe
+   818	wild
+   819	wofür
+   820	Kontakt
+   821	darin
+   822	sonne
+   823	leck
+   824	dahin
+   825	Rose
+   826	Bullen
+   827	gold
+   828	starten
+   829	Baum
+   830	menschliche
+   831	dick
+   832	warm
+   833	entspann
+   834	dritte
+   835	irgendwann
+   836	Erinnerung
+   837	Mark
+   838	jedenfalls
+   839	kaputt
+   840	hoffentlich
+   841	Hoffnung
+   842	tschüss
+   843	sowieso
+   844	leise
+   845	unbedingt
+   846	trauen
+   847	zumindest
+   848	Überraschung
+   849	runde
+   850	bisher
+   851	heil
+   852	Drogen
+   853	Hunger
+   854	offensichtlich
+   855	gewarnt
+   856	Held
+   857	neben
+   858	ergibt
+   859	nick
+   860	gesund
+   861	Patienten
+   862	erwähnt
+   863	sauer
+   864	brennt
+   865	Glas
+   866	Geburtstag
+   867	Gericht
+   868	nerven
+   869	angekommen
+   870	vergeben
+   871	entdeckt
+   872	Maschine
+   873	übel
+   874	mitgebracht
+   875	Regierung
+   876	Henry
+   877	unterschied
+   878	unschuldig
+   879	Schicksal
+   880	Armee
+   881	schlampe
+   882	klingelt
+   883	Nase
+   884	schuldig
+   885	lächeln
+   886	angestellt
+   887	Tante
+   888	Kirche
+   889	betrunken
+   890	Hose
+   891	verdächtigen
+   892	Bord
+   893	Untertitel
+   894	Situation
+   895	übrig
+   896	irgendwelche
+   897	unternehmen
+   898	erlebt
+   899	Lied
+   900	vorbereitet
+   901	ausgehen
+   902	Stein
+   903	vermutlich
+   904	Gebäude
+   905	Drink
+   906	Grad
+   907	Alex
+   908	Majestät
+   909	diesmal
+   910	vertrag
+   911	Ehemann
+   912	ha
+   913	verantwortlich
+   914	stöhnt
+   915	klopfen
+   916	probieren
+   917	regen
+   918	Zeitung
+   919	Kugel
+   920	vergnügen
+   921	geklaut
+   922	ball
+   923	klug
+   924	hinterlassen
+   925	fantastisch
+   926	witzig
+   927	gegenüber
+   928	Ben
+   929	schmeckt
+   930	Show
+   931	verbrannt
+   932	Gesellschaft
+   933	miteinander
+   934	aufstehen
+   935	Lust
+   936	verhalten
+   937	Insel
+   938	abholen
+   939	erfolg
+   940	Dorf
+   941	abhauen
+   942	Freude
+   943	grenze
+   944	ran
+   945	nämlich
+   946	aufgetaucht
+   947	beten
+   948	loch
+   949	Gruppe
+   950	grüß
+   951	fliehen
+   952	grün
+   953	Zeichen
+   954	heim
+   955	Tee
+   956	übrigens
+   957	bombe
+   958	eis
+   959	quatsch
+   960	nervös
+   961	soweit
+   962	indem
+   963	Blumen
+   964	unterschreiben
+   965	Achtung
+   966	empfangen
+   967	erscheinen
+   968	bemerkt
+   969	hals
+   970	flucht
+   971	kapiert
+   972	Don
+   973	Weihnachten
+   974	Sarah
+   975	Bob
+   976	Vergangenheit
+   977	entweder
+   978	Sheriff
+   979	geheim
+   980	weder
+   981	anziehen
+   982	jawohl
+   983	Gespräch
+   984	ungefähr
+   985	entkommen
+   986	zuvor
+   987	Position
+   988	Amerika
+   989	bestellt
+   990	verboten
+   991	glückwunsch
+   992	Königin
+   993	Staaten
+   994	Adresse
+   995	Messer
+   996	Meer
+   997	drinnen
+   998	behauptet
+   999	mitkommen
+  1000	herein
